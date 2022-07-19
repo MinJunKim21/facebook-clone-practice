@@ -13,6 +13,7 @@ import {
   SearchIcon,
   ShoppingCartIcon,
 } from '@heroicons/react/outline';
+import HeaderIcon from './HeaderIcon';
 
 function Header() {
   return (
@@ -35,6 +36,15 @@ function Header() {
         </div>
       </div>
       {/* center */}
+      <div className="flex justify-center flex-grow">
+        <div className="flex space-x-6 md:space-x-2">
+          <HeaderIcon Icon={HomeIcon} />
+          <HeaderIcon Icon={FlagIcon} />
+          <HeaderIcon Icon={PlayIcon} />
+          <HeaderIcon Icon={ShoppingCartIcon} />
+          <HeaderIcon Icon={UserGroupIcon} />
+        </div>
+      </div>
       {/* right */}
     </div>
   );
