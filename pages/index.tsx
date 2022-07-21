@@ -13,10 +13,8 @@ export default function Home({ session }) {
       <Head>
         <title>Facebook-Practice</title>
       </Head>
-
       {/* Header */}
       <Header />
-
       <main>
         {/* Sidebar */}
         {/* Feed */}

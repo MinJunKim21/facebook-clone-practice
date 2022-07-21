@@ -1,5 +1,5 @@
-import { signIn } from 'next-auth/react';
 import Image from 'next/image';
+import { signIn } from 'next-auth/react';
 
 function Login() {
   return (
