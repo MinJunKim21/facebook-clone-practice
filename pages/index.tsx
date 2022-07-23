@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+// import type { NextPage } from 'next';
 import { getSession } from 'next-auth/react';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -25,7 +25,7 @@ export default function Home({ session }) {
 }
 
 //인덱스 페이지 열리기 전에 로그인 정보를 확인해서 열어주기 위해서 SSR 적용
-export async function getServerSideProps(context) {
+export const getServerSideProps = async (context) => {
   //get user
   const session = await getSession(context);
 
@@ -34,4 +34,4 @@ export async function getServerSideProps(context) {
       session,
     },
   };
-}
+};
